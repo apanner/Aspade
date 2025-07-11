@@ -1,0 +1,24 @@
+{
+  "playerId": "wxvc3tnla",
+  "name": "shanaja",
+  "createdAt": 1751922342469,
+  "lastLogin": 1751922342469,
+  "loginCount": 1,
+  "stats": {
+    "gamesPlayed": 0,
+    "gamesWon": 0,
+    "gamesLost": 0,
+    "winRate": 0,
+    "totalScore": 0,
+    "averageScore": 0,
+    "bestScore": 0,
+    "totalBids": 0,
+    "bidsMade": 0,
+    "bidAccuracy": 0
+  },
+  "preferences": {
+    "favoriteTeamName": "",
+    "preferredGameMode": "teams",
+    "notifications": true
+  }
+}

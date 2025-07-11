@@ -1,0 +1,12 @@
+{
+  "name": "spade-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node frontend-app.js"
+  },
+  "dependencies": {
+    "next": "15.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

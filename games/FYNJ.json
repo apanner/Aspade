@@ -1,0 +1,56 @@
+{
+  "id": "FYNJ",
+  "code": "FYNJ",
+  "hostId": "jj7ml3yje",
+  "hostName": "Panneer",
+  "title": "Ultimate Legends",
+  "description": "",
+  "createdAt": 1751781640578,
+  "lastActivity": 1751781640578,
+  "status": "lobby",
+  "state": "lobby",
+  "currentRound": 0,
+  "maxRounds": 13,
+  "totalRounds": 13,
+  "maxPlayers": 4,
+  "teamConfig": {
+    "gameMode": "teams",
+    "numberOfTeams": 2,
+    "playersPerTeam": 2,
+    "autoAssignTeams": true
+  },
+  "teamConfigs": [
+    {
+      "id": "team1",
+      "name": "Club Jacks",
+      "color": "#ec4899",
+      "colorName": "Rose",
+      "bg": "bg-pink-500"
+    },
+    {
+      "id": "team2",
+      "name": "Mighty Eagles",
+      "color": "#d946ef",
+      "colorName": "Fuchsia",
+      "bg": "bg-fuchsia-500"
+    }
+  ],
+  "biddingStyle": "visible",
+  "bidTimer": 300,
+  "players": {
+    "jj7ml3yje": {
+      "id": "jj7ml3yje",
+      "name": "Panneer",
+      "team": "team1",
+      "isHost": true,
+      "joinedAt": 1751781640578,
+      "isComputer": false
+    }
+  },
+  "rounds": [],
+  "scores": {
+    "team1": 0,
+    "team2": 0
+  },
+  "roundScores": {}
+}
