@@ -4,17 +4,19 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // Create games directory if it doesn't exist
-const GAMES_DIR = path.join(__dirname, 'games');
-const PLAYERS_DIR = path.join(__dirname, 'players');
-const PLAYER_PROFILES_DIR = path.join(__dirname, 'player_profiles');
-const GAME_HISTORY_DIR = path.join(__dirname, 'game_history');
+// Use mounted volume path for Fly.io deployment
+const DATA_DIR = process.env.NODE_ENV === 'production' ? '/app/data' : __dirname;
+const GAMES_DIR = path.join(DATA_DIR, 'games');
+const PLAYERS_DIR = path.join(DATA_DIR, 'players');
+const PLAYER_PROFILES_DIR = path.join(DATA_DIR, 'player_profiles');
+const GAME_HISTORY_DIR = path.join(DATA_DIR, 'game_history');
 
 if (!fs.existsSync(GAMES_DIR)) {
   fs.mkdirSync(GAMES_DIR, { recursive: true });
