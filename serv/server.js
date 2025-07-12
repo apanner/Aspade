@@ -222,7 +222,7 @@ app.get('/api', (req, res) => {
   });
 });
 
-// app.get('/health', (req, res) => {
+app.get('/health', (req, res) => {
   const gameIds = getAllGameFiles();
   res.json({ 
     status: 'ok', 
